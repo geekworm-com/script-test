@@ -46,5 +46,6 @@ sudo cp -f ./x-c1-softsd.sh             /usr/local/bin/
 Create a alias `xoff` command to execute the software shutdown
 <pre>
 echo "alias xoff='sudo /usr/local/bin/x-c1-softsd.sh'" >>   ~/.bashrc
+source ~/.bashrc
 </pre>
 Then you can run `xoff` to execute software shutdown.
