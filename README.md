@@ -1,5 +1,5 @@
 # script-test
-This is only a script test project.
+This is only a script test project for x-c1 and NASPi CM4-M2 or NASPi CM4-2.5.
 
 ## Preconfigured `/boot/config.txt`
 To install pwm fan, first add `dtoverlay=pwm-2chan` to `/boot/config.txt` under `[all]` and reboot:
