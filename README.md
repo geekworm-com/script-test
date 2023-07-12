@@ -43,7 +43,8 @@ sudo systemctl start x-c1-pwr
 <pre>
 sudo cp -f ./x-c1-softsd.sh             /usr/local/bin/
 </pre>
-Create a alias xoff command to execute the software shutdown
+Create a alias `xoff` command to execute the software shutdown
 <pre>
-echo "alias xoff='sudo /usr/local/bin/softsd.sh'" >>   ~/.bashrc
+echo "alias xoff='sudo /usr/local/bin/x-c1-softsd.sh'" >>   ~/.bashrc
 </pre>
+Then you can run `xoff` to execute software shutdown.
