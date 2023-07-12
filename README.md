@@ -36,10 +36,14 @@ sudo cp -f ./x-c1-pwr.sh                /usr/local/bin/
 sudo cp -f x-c1-pwr.service             /lib/systemd/system
 sudo systemctl daemon-reload
 sudo systemctl enable x-c1-pwr
->sudo systemctl start x-c1-pwr
+sudo systemctl start x-c1-pwr
 </pre>
 
 ## Prepair software shutdown
 <pre>
 sudo cp -f ./x-c1-softsd.sh             /usr/local/bin/
+</pre>
+Create a alias xoff command to execute the software shutdown
+<pre>
+echo "alias xoff='sudo /usr/local/bin/softsd.sh'" >>   ~/.bashrc
 </pre>
