@@ -1,6 +1,6 @@
 # script-test
 This is script installation tutorial for `NASPi`, `NASPi Gemini 2.5`, `NASPi CM4-M2` and `NASPi CM4-2.5`.
-
+***
 The original code is from [pimlie/geekworm-x-c1](https://github.com/pimlie/geekworm-x-c1), **pimlie** implements the pwm fan shell script, which does not depend on third-party python libraries at all. Thanks to **pimlie**.
 
 ## OS that has been tested
@@ -34,7 +34,7 @@ cd script-test
 chmod +x *.sh
 </pre>
 
-## Prepair the `x-c1-fan` service
+## Create the `x-c1-fan` service
 <pre>
 sudo cp -f ./x-c1-fan.sh                /usr/local/bin/
 sudo cp -f ./x-c1-fan.service           /lib/systemd/system
@@ -42,8 +42,9 @@ sudo systemctl daemon-reload
 sudo systemctl enable x-c1-fan
 sudo systemctl start x-c1-fan
 </pre>
+Then the pwm fan starts running
 
-## Prepair the `x-c1-pwr` service
+## Create the `x-c1-pwr` service
 <pre>
 sudo cp -f ./x-c1-pwr.sh                /usr/local/bin/
 sudo cp -f x-c1-pwr.service             /lib/systemd/system
