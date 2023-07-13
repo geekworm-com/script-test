@@ -44,6 +44,8 @@ sudo systemctl start x-c1-fan
 </pre>
 Then the pwm fan starts running
 
+> PS: If your device does not support pwm fans or you are not using pwm, you can skip this step
+>
 ## Create the `x-c1-pwr` service
 <pre>
 sudo cp -f ./x-c1-pwr.sh                /usr/local/bin/
@@ -65,12 +67,12 @@ source ~/.bashrc
 Then you can run `xoff` to execute software safe shutdown.
 
 ## Test safe shutdown
-Software safe shutdown:
+Software safe shutdown command:
 <pre>
 xoff
 </pre>
 
-Hardware safe shutdown:
+Hardware safe shutdown operation:
 * press on-board button switch 1-2 seconds to reboot
 * press button switch 3 seconds to safe shutdown,
 * press 7-8 seconds to force shutdown.
